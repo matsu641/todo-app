@@ -24,57 +24,17 @@
 
 ---
 
-### セットアップ手順
+### DEMO
+1. Sign up または Loginをする。
+![image](https://github.com/user-attachments/assets/63c1554b-92a8-42d4-9d9e-3b64b930cad1)
 
-#### 1. リポジトリをクローン
+2. ログインが成功したらOKを押す。
+![image](https://github.com/user-attachments/assets/daf11b12-f7ad-42b6-adb3-732c60fb86db)
 
-```bash
-git clone https://github.com/your-username/todo-app.git
-cd todo-app
-```
+3. タスクを追加していく。
+![image](https://github.com/user-attachments/assets/3fea067f-275a-47f2-90a7-d3853de011df)
 
-#### 2. 依存パッケージのインストール
 
-**フロントエンド：**
-
-```bash
-cd client
-npm install
-```
-
-**バックエンド：**
-
-```bash
-cd ../server
-npm install
-```
-
----
-
-#### 3. Firebaseの設定
-
-1. [Firebase コンソール](https://console.firebase.google.com/) にアクセスして新しいプロジェクトを作成
-2. 「Authentication」→「サインイン方法」で「メール/パスワード」を有効化
-3. プロジェクトの構成情報をコピーし、`client/src/firebase.js` に貼り付け
-
-例：
-
-```js
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-
-const firebaseConfig = {
-  apiKey: "...",
-  authDomain: "...",
-  projectId: "...",
-  storageBucket: "...",
-  messagingSenderId: "...",
-  appId: "..."
-};
-
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-```
 
 ---
 
